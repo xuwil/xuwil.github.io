@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            width: 80%;
+        }
+
+        #navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            color: #ddd;
+        }
+
+        #main {
+            width: 80%;
+        }
+
+        #photo {
+            max-width: 100%;
+        }
+
+        #about {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        #papers {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .paper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .paper img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .links {
+            font-size: 30px;
+        }
+
+        .links a {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .links i {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 600px) {
+            #navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #papers {
+                justify-content: center;
+            }
+
+            #main {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="name">[Your Name]</div>
+    </nav>
+
+    <main id="main">
+        <img id="photo" src="resources/photo.JPG" alt="Your photo">
+
+        <section id="about">
+            <h1>About Me</h1>
+            <p>I am a Master of Applied Science Candidate at the University of Toronto, Mechanical and Industrial Engineering Department. I am supervised by Professor Scott Sanner and Professor Elias Khalil.</p>
+        </section>
+
+        <section id="links">
+            <h2>Contact &amp; Links</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/xuwil" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://github.com/xuwil" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                <a href="resources/Yudong-Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Resume</a>
+            </div>
+        </section>
+
+        <section id="papers">
+            <h2>My Papers</h2>
+
+            <div class="paper">
+                <img src="paper1_visualization.png" alt="Paper 1 Visualization">
+                <a href="paper1.pdf" target="_blank">Title of Paper 1</a>
+                <p>[Abstract of Paper 1]</p>
+            </div>
+
+            <!-- add more papers in the same way -->
+        </section>
+    </main>
+</body>
+</html>
