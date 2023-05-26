@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yudong's Personal Website</title>
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <style>
+        /* Basic box-sizing reset */
         * {
             box-sizing: border-box;
         }
 
+        /* Styling for the body */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -21,6 +26,7 @@
             justify-content: center;
         }
 
+        /* Styling for the navbar */
         #navbar {
             display: flex;
             justify-content: space-between;
@@ -29,92 +35,190 @@
             padding: 10px;
             font-size: 20px;
             width: 80%;
+            margin-bottom: 25px;
         }
 
+        /* Styling for the navbar links */
         #navbar a {
             color: #fff;
             text-decoration: none;
         }
 
+        /* Styling for the navbar links on hover */
         #navbar a:hover {
             color: #ddd;
         }
 
+        /* Styling for the main section */
         #main {
             width: 80%;
         }
 
-        #photo {
-            width: 20%; /* Adjust this value to your preference */
-            display: block;
-            margin: 0 auto; /* Center the image */
+        /* Styling for the profile section */
+        #profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
+
+
+        /* Styling for the profile photo */
+        #photo {
+            width: 20%;
+            margin-right: 2%;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
+
+        /* Styling for the about section */
         #about {
             font-size: 20px;
             line-height: 1.6;
+            width: 68%;
         }
 
+        #about a {
+            color: darkblue;
+            text-decoration: none;
+        }
+
+
+        /* Styling for the papers section */
         #papers {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
         }
 
+        /* Styling for each paper */
         .paper {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 15px;
+            width: 60%; /* Adjust the width of the paper block here */
+            border: 1px solid #ddd;
+            padding: 15px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            text-decoration: none; /* Remove underline from the text */
         }
 
+        /* Styling for each paper on hover */
+        .paper:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Styling for the paper titles and abstracts */
+        .paper h3, .paper p {
+            color: #000; /* Set the color of the text */
+        }
+
+        /* Styling for visited links */
+        .paper:visited h3, .paper:visited p {
+            color: #000; /* Prevent color change after clicking */
+        }
+
+
+        /* Styling for the paper images */
         .paper img {
-            width: 100px;
+            width: 100%;
+            height: auto;
             margin-bottom: 15px;
         }
 
-        .links {
+        /* Styling for the paper titles */
+        .paper a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
             font-size: 24px;
         }
 
+        /* Styling for the paper abstracts */
+        .paper p {
+            color: #000;
+            font-size: 16px;
+            /*line-height: 1.6;*/
+            margin-top: 15px;
+        }
+
+        /* Styling for the links */
+        .links {
+            font-size: 30px;
+        }
+
+        /* Styling for each link */
         .links a {
             margin-right: 15px;
             display: flex;
             align-items: center;
+            color: #000;
         }
 
+        /* Styling for the link icons */
         .links i {
             margin-right: 5px;
         }
 
+        /* Responsive styling */
         @media (max-width: 600px) {
             #navbar {
                 flex-direction: column;
                 align-items: center;
             }
 
-            #papers {
-                justify-content: center;
-            }
-
             #main {
                 width: 90%;
+            }
+
+            #profile {
+                flex-direction: column;
+            }
+
+            #photo, #about {
+                width: 80%;
+            }
+
+            #papers {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
+<!--     Navbar -->
     <nav id="navbar">
-        <div id="name">Yudong (Will) Xu</div>
+        <div id="nav-name">Yudong (Will) Xu</div>
     </nav>
 
+    <!-- Main content -->
     <main id="main">
-        <img id="photo" src="resources/photo.JPG" alt="Your photo">
 
-        <section id="about">
-            <h1>About Me</h1>
-            <p>I am a Master of Applied Science Candidate at the University of Toronto, Mechanical and Industrial Engineering Department. I am supervised by Professor Scott Sanner and Professor Elias Khalil.</p>
-        </section>
+        <!-- Profile section -->
+        <div id="profile">
+            <img id="photo" src="resources/photo.JPG" alt="Your photo">
+<!--            <section id="name">Yudong (Will) Xu</section>-->
 
+            <section id="about">
+                <h1>Yudong (Will) Xu </h1>
+                <p>
+                    I'm a Master of Applied Science (MASc) Candidate in <a href="https://www.mie.utoronto.ca/" target="_blank">Mechanical and Industrial Engineering</a> at the
+                    <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>, supervised by
+                    <a href="https://d3m.mie.utoronto.ca/members/ssanner/" target="_blank">Professor Scott Sanner</a> and
+                    <a href="https://www.ekhalil.com/" target="_blank">Professor Elias Khalil</a>.
+                    I earned my undergraduate degree in <a href="https://engsci.utoronto.ca/" target="_blank">Engineering Science</a>  at the University of Toronto, majoring in Machine Intelligence .
+                    My research now focuses on solving the Abstraction and Reasoning Corpus using an object-centric approach.
+                </p>
+            </section>
+
+        </div>
+
+        <!-- Links section -->
         <section id="links">
             <h2>Contact &amp; Links</h2>
             <div class="links">
@@ -124,17 +228,23 @@
             </div>
         </section>
 
-<!--        <section id="papers">-->
-<!--            <h2>My Papers</h2>-->
+        <!-- Papers section -->
+        <section id="papers">
+            <h2>Papers</h2>
+            <!-- First paper -->
+            <a href="https://arxiv.org/abs/2210.09880" target="_blank" class="paper">
+                <img src="resources/paper1.png" alt="Paper 1 Visualization">
+                <h3>Graphs, Constraints, and Search for the Abstraction and Reasoning Corpus</h3>
+                <p>The Abstraction and Reasoning Corpus (ARC) aims at benchmarking the performance of general artificial intelligence algorithms. The ARC's focus on broad generalization and few-shot learning has made it difficult to solve using pure machine learning. A more promising approach has been to perform program synthesis within an appropriately designed Domain Specific Language (DSL). However, these too have seen limited success. We propose Abstract Reasoning with Graph Abstractions (ARGA), a new object-centric framework that first represents images using graphs and then performs a search for a correct program in a DSL that is based on the abstracted graph space. The complexity of this combinatorial search is tamed through the use of constraint acquisition, state hashing, and Tabu search. An extensive set of experiments demonstrates the promise of ARGA in tackling some of the complicated object-centric tasks of the ARC rather efficiently, producing programs that are correct and easy to understand.</p>
+            </a>
 
-<!--            <div class="paper">-->
-<!--                <img src="paper1_visualization.png" alt="Paper 1 Visualization">-->
-<!--                <a href="paper1.pdf" target="_blank">Title of Paper 1</a>-->
-<!--                <p>[Abstract of Paper 1]</p>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; add more papers in the same way &ndash;&gt;-->
-<!--        </section>-->
+            <!-- Second paper -->
+            <a href="resources/LLM4ARC.pdf" target="_blank" class="paper">
+                <img src="resources/paper2.png" alt="Paper 2 Visualization">
+                <h3>LLMs and the Abstraction and Reasoning Corpus: Successes, Failures, and the Importance of Object-based Representations</h3>
+                <p>Can a Large Language Model (LLM) solve simple abstract reasoning problems? We explore this broad question through a systematic analysis of GPT on the Abstraction and Reasoning Corpus (ARC), a representative benchmark of abstract reasoning ability from limited examples in which solutions require some "core knowledge" of concepts such as objects, goal states, counting, and basic geometry. GPT-4 solves only 13/50 of the most straightforward ARC tasks when using textual encodings for their two-dimensional input-output grids. Our failure analysis reveals that GPT-4's capacity to identify objects and reason about them is significantly influenced by the sequential nature of the text that represents an object within a text encoding of a task. To test this hypothesis, we design a new benchmark, the 1D-ARC, which consists of one-dimensional (array-like) tasks that are more conducive to GPT-based reasoning, and where it indeed performs better than on the (2D) ARC. To alleviate this issue, we propose an object-based representation that is obtained through an external tool, resulting in nearly doubling the performance on solved ARC tasks and near-perfect scores on the easier 1D-ARC. Although the state-of-the-art GPT-4 is unable to "reason" perfectly within non-language domains such as the 1D-ARC or a simple ARC subset, our study reveals that the use of object-based representations can significantly improve its reasoning ability. Visualizations, GPT logs, and data are available at https://khalil-research.github.io/LLM4ARC.</p>
+            </a>
+        </section>
     </main>
 </body>
 </html>
