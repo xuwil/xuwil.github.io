@@ -88,13 +88,16 @@
           <tr onmouseout="hnetcrl_stop()" onmouseover="hnetcrl_start()">
             <td style="padding:20px;width:100%;vertical-align:right; text-align: center;">
               <div style="display: flex; justify-content: center; align-items: center;">
-                <img src='resources/paper-vitarc.png' width="600" style="display: block; margin: auto;">
+                <img src='resources/paper-vitarc.png' width="600" style="display: block; margin: 0px;">
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <p style="margin-bottom: -20px; padding-bottom: 0px; text-align: center;">Enhancing the vision transformer (ViT) architecture to solve the Abstraction and Reasoning Corpus.</p>
               </div>
             </td>
-          </tr> 
-          <tr> 
+          </tr>
+          <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2410.06405">
+              <a href="https://arxiv.org/abs/2410.06405" style="margin-top: -5px;">
                 <papertitle>Tackling the Abstraction and Reasoning Corpus with Vision Transformers: the Importance of 2D Representation, Positions, and Objects (Preprint)</papertitle>
               </a>
               <br>
@@ -113,9 +116,11 @@
               <a href="https://x.com/WenhaoLi29/status/1846217448678207556">Tweet</a>
               /
               <!-- <p>The Abstraction and Reasoning Corpus (ARC) is a popular benchmark focused on visual reasoning in the evaluation of Artificial Intelligence systems. In its original framing, an ARC task requires solving a program synthesis problem over small 2D images using a few input-output training pairs. In this work, we adopt the recently popular data-driven approach to the ARC and ask whether a Vision Transformer (ViT) can learn the implicit mapping, from input image to output image, that underlies the task. We show that a ViT -- otherwise a state-of-the-art model for images -- fails dramatically on most ARC tasks even when trained on one million examples per task. This points to an inherent representational deficiency of the ViT architecture that makes it incapable of uncovering the simple structured mappings underlying the ARC tasks. Building on these insights, we propose ViTARC, a ViT-style architecture that unlocks some of the visual reasoning capabilities required by the ARC. Specifically, we use a pixel-level input representation, design a spatially-aware tokenization scheme, and introduce a novel object-based positional encoding that leverages automatic segmentation, among other enhancements. Our task-specific ViTARC models achieve a test solve rate close to 100% on more than half of the 400 public ARC tasks strictly through supervised learning from input-output grids. This calls attention to the importance of imbuing the powerful (Vision) Transformer with the correct inductive biases for abstract visual reasoning that are critical even when the training data is plentiful and the mapping is noise-free. Hence, ViTARC provides a strong foundation for future research in visual reasoning using transformer-based architectures.</p> -->
-              <p>Enhancing the vision transformer (ViT) architecture to solve the Abstraction and Reasoning Corpus.</p>
-              </td>
-        </tr> 
+<!--              <p>Enhancing the vision transformer (ViT) architecture to solve the Abstraction and Reasoning Corpus.</p>-->
+            <hr style="margin-top: 5px; border: 0.5px solid black;">
+
+            </td>
+        </tr>
 
 
           <tr onmouseout="hnetcrl_stop()" onmouseover="hnetcrl_start()">
@@ -123,11 +128,14 @@
               <div style="display: flex; justify-content: center; align-items: center;">
                 <img src='resources/paper2.png' width="600" style="display: block; margin: auto;">
               </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <p style="margin-bottom: -20px; padding-bottom: 0px; text-align: center;">An exploration of LLMs' ability to solve the Abstraction and Reasoning Corpus.</p>
+              </div>
             </td>
           </tr> 
           <tr> 
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=E8m8oySvPJ">
+              <a href="https://openreview.net/forum?id=E8m8oySvPJ" style="margin-top: -5px;">
                 <papertitle>LLMs and the Abstraction and Reasoning Corpus: Successes, Failures, and the Importance of Object-based Representations (TMLR-2024)</papertitle>
               </a>
               <br>
@@ -152,8 +160,10 @@
               <a href="https://x.com/pashootan_vaezi/status/1666106834275430400">Tweet</a>
               /
               <p></p>
-              <p>An exploration of LLMs' ability to solve the Abstraction and Reasoning Corpus.</p>
+<!--              <p>An exploration of LLMs' ability to solve the Abstraction and Reasoning Corpus.</p>-->
               <!-- <p>Can a Large Language Model (LLM) solve simple abstract reasoning problems? We explore this broad question through a systematic analysis of GPT on the Abstraction and Reasoning Corpus (ARC), a representative benchmark of abstract reasoning ability from limited examples in which solutions require some "core knowledge" of concepts such as objects, goal states, counting, and basic geometry. GPT-4 solves only 13/50 of the most straightforward ARC tasks when using textual encodings for their two-dimensional input-output grids. Our failure analysis reveals that GPT-4's capacity to identify objects and reason about them is significantly influenced by the sequential nature of the text that represents an object within a text encoding of a task. To test this hypothesis, we design a new benchmark, the 1D-ARC, which consists of one-dimensional (array-like) tasks that are more conducive to GPT-based reasoning, and where it indeed performs better than on the (2D) ARC. To alleviate this issue, we propose an object-based representation that is obtained through an external tool, resulting in nearly doubling the performance on solved ARC tasks and near-perfect scores on the easier 1D-ARC. Although the state-of-the-art GPT-4 is unable to "reason" perfectly within non-language domains such as the 1D-ARC or a simple ARC subset, our study reveals that the use of object-based representations can significantly improve its reasoning ability.</p> -->
+            <hr style="margin-top: 5px; border: 0.5px solid black;">
+
             </td>
         </tr> 
 
@@ -162,11 +172,14 @@
             <div style="display: flex; justify-content: center; align-items: center;">
               <img src='resources/paper1.png' width="600" style="max-width: 100%;">
             </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <p style="margin-bottom: -20px; padding-bottom: 0px; text-align: center;">A graph-based symbolic AI approach to solving the Abstraction and Reasoning Corpus.</p>
+            </div>
           </td>
         </tr> 
         <tr> 
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <a href="https://doi.org/10.1609/aaai.v37i4.25527">
+              <a href="https://doi.org/10.1609/aaai.v37i4.25527" style="margin-top: -5px;">
                 <papertitle>Graphs, Constraints, and Search for the Abstraction and Reasoning Corpus (AAAI-2023)</papertitle>
               </a>
               <br>
@@ -187,363 +200,15 @@
               <a href="resources/arga-presentation.pdf">Slides</a>
               /
               <p></p>
-              <p>A graph-based symbolic AI approach to solving the Abstraction and Reasoning Corpus.</p>
+<!--              <p>A graph-based symbolic AI approach to solving the Abstraction and Reasoning Corpus.</p>-->
               <!-- <p>The Abstraction and Reasoning Corpus (ARC) aims at benchmarking the performance of general artificial intelligence algorithms. The ARC's focus on broad generalization and few-shot learning has made it difficult to solve using pure machine learning. A more promising approach has been to perform program synthesis within an appropriately designed Domain Specific Language (DSL). However, these too have seen limited success. We propose Abstract Reasoning with Graph Abstractions (ARGA), a new object-centric framework that first represents images using graphs and then performs a search for a correct program in a DSL that is based on the abstracted graph space. The complexity of this combinatorial search is tamed through the use of constraint acquisition, state hashing, and Tabu search. An extensive set of experiments demonstrates the promise of ARGA in tackling some of the complicated object-centric tasks of the ARC rather efficiently, producing programs that are correct and easy to understand.</p> -->
-            </td>
-        </tr> 
+            <hr style="margin-top: 5px; border: 0.5px solid black;">
 
-<!--         
-        <tr onmouseout="hnetcrl_stop()" onmouseover="hnetcrl_start()">
-          <td style="padding:20px;width:27%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='boat_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/boat.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/boat.JPG' width="180">
-            </div>
-            <script type="text/javascript">
-              function boat_start() {
-                document.getElementById('boat_image').style.opacity = "1";
-              }
+            </td>
+        </tr>
+        <hr style="margin-top: 10px; border: 1px solid black;">
 
-              function boat_stop() {
-                document.getElementById('boat_image').style.opacity = "0";
-              }
-              boat_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:73%;vertical-align:middle">
-            <a href="https://arxiv.org/pdf/2209.11864.pdf">
-              <papertitle>Stochastic Planning for ASV Navigation Using Satellite Images</papertitle>
-            </a>
-            <br>
-            <strong>Yizhou Huang</strong>,
-            <a href="https://hamzadugmag.com/">Hamza Dugmag</a>,
-            <a href="http://asrl.utias.utoronto.ca/~tdb/">Timothy D. Barfoot</a>,
-            <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
-            <br>
-            <em>ICRA</em>, 2023
-            <br>
-            <a href="https://pcctp.github.io/">Website</a>
-            /
-            <a href="https://arxiv.org/pdf/2209.11864.pdf">arXiv</a>
-            /
-            <a href="https://github.com/pcctp/icra23-code">Code</a>
-            /
-            <a href="https://youtu.be/-APXRgSsnu8">Video</a>
-            /
-            <p></p>
-            <p>A robust route-planning algorithm uses satellite images as a corase map to plan water sampling routes for autonomous surface vessels (ASV) given environmental disturbances.</p>
-          </td>
-        </tr> 
-           
-        <tr onmouseout="hnetcrl_stop()" onmouseover="hnetcrl_start()">
-          <td style="padding:20px;width:27%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='hnetcrl_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/hnetcrl_door.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/hypercrl.png' width="180">
-            </div>
-            <script type="text/javascript">
-              function hnetcrl_start() {
-                document.getElementById('hnetcrl_image').style.opacity = "1";
-              }
 
-              function hnetcrl_stop() {
-                document.getElementById('hnetcrl_image').style.opacity = "0";
-              }
-              hnetcrl_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:73%;vertical-align:middle">
-            <a href="https://rvl.cs.toronto.edu/blog/hypercrl-md">
-              <papertitle>Continual Model-Based Reinforcement Learning with Hypernetworks</papertitle>
-            </a>
-            <br>
-            <strong>Yizhou Huang</strong>,
-            <a href="https://kevincxie.github.io/">Kevin Xie</a>,
-            <a href="https://homangab.github.io/">Homanga Bharadhwaj</a>,
-            <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
-            <br>
-            <em>ICRA</em>, 2021 and <em>Deep RL Workshop</em> (NeurIPS 20) &nbsp
-            <br>
-            <a href="https://rvl.cs.toronto.edu/blog/hypercrl-md">Website</a>
-            /
-            <a href="https://arxiv.org/pdf/2009.11997.pdf">arXiv</a>
-            /
-            <a href="https://youtu.be/VJsdJu3H23c">Video</a>
-            /
-            <a href="https://github.com/rvl-lab-utoronto/HyperCRL">Code</a>
-            <p></p>
-            <p>Task-conditioned hypernetworks can be used to continually adapt to varying environment dynamics in lifelong model-based reinforcement learning, with a fixed-size replay buffer.</p>
-          </td>
-        </tr> 
-
-        <tr onmouseout="autodrive_stop()" onmouseover="autodrive_start()">
-          <td style="padding:20px;width:27%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='autodrive_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/autodrive_image.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/autodrive_image.jpg' width="180">
-            </div>
-            <script type="text/javascript">
-              function autodrive_start() {
-                document.getElementById('autodrive_image').style.opacity = "1";
-              }
-
-              function autodrive_stop() {
-                document.getElementById('autodrive_image').style.opacity = "0";
-              }
-              autodrive_stop()
-            </script>
-          </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2004.08752">
-                <papertitle>Zeus: A system description of the two-time winner of the collegiate SAE autodrive competition.</papertitle>
-              </a>
-              <br>
-              <a href="http://asrl.utias.utoronto.ca/~keenan/">Keenan Burnett</a>, 
-              Jingxing Qian, Xintong Du, Linqiao Liu, David J. Yoon, Tianchang Shen,
-              Susan Sun, Sepehr Samavi, Michael J. Sorocky, Mollie Bianchi, Kaicheng Zhang, 
-              Arkady Arkhangorodsky, Quinlan Sykora, Shichen Lu,
-              <strong>Yizhou Huang</strong>,
-              <a href="https://www.dynsyslab.org/prof-angela-schoellig/">Angela Schoellig</a>,
-              <a href="http://asrl.utias.utoronto.ca/~tdb/">Timothy D. Barfoot</a>, <br>
-              <em>Journal of Field Robotics</em>, 2021 &nbsp
-              <br>
-              <a href="https://arxiv.org/abs/2004.08752">arXiv</a>
-                /
-              <a href="https://youtu.be/2Z6mPKIv0TM">Video</a>
-              <p></p>
-              <p>System design and development of the winning self-driving car in the AutoDrive Challenge, as well as lessons learned.</p>
-            </td>
-          </tr>
-
-        </tbody></table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Theses</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-           
-          <tr onmouseout="hnetcrl_stop()" onmouseover="hnetcrl_start()">
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/cl_thesis.JPG' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://rvl.cs.toronto.edu/blog/hypercrl-md">
-                <papertitle>Improving Regularization-based Continual Learning with Hypernetworks</papertitle>
-              </a>
-              <br>
-              <strong>Yizhou Huang</strong>
-              <br> <em>Bachelor Thesis</em>
-              <br>
-              Supervisor: <a href="https://pratulsrinivasan.github.io/">Florian Shkurti</a>
-              <br>
-              <a href="https://drive.google.com/file/d/1Ih6WpLv1iw-VlSP4LjHGLL70PXuM6Qpo/view?usp=sharing">Thesis pdf</a>/
-              <a href="https://drive.google.com/file/d/1nhfIkMQ70aHNKbvw8ig-1_xvbw7d8kYP/view?usp=sharing">Presentation</a>
-              <p></p>
-              <p>In continual learning, self-tuning network (STN) is a memory-efficient and easy-to-implement hypernetworks architecture with strong performance on many benchmarks.  </p>
-            </td>
-          </tr> 
-          </tbody></table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Projects</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/mie1666.JPG' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://github.com/philip-huang/mie1666_project">
-                <papertitle>Learning Heuristics for Minimum Latency Problem with RL and GNN</papertitle>
-              </a>
-              <br>
-              Course Project
-              <br>
-              University of Toronto, <em>MIE 1666</em> Machine Learning for Mathematical Optimization
-              <br>
-              <a href="data/MIE1666_Final_Report.pdf">Final Report</a>/
-              <a href="data/MIE1666 - RL+GNN for MLP.pdf">Presentation</a>/
-              <a href="https://github.com/philip-huang/mie1666_project">Code</a>
-              <p></p>
-              <p>RL can be applied to the Minimum Latency Problem by using a graph attention network to encode stochastic policy for constructively building partial paths, 
-                yielding solutions which are comparable to state-of-the-art, hand-engineered methods.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/csc2549.JPG' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://youtu.be/_fNMWlUNowc">
-                <papertitle>Linear-Time Dynamics using Lagrange Multipliers</papertitle>
-              </a>
-              <br>
-              Course Project
-              <br>
-              University of Toronto, <em>CSC 2549</em> Physics-based Animation
-              <br>
-              <a href="data/CSC2549_Final_Project.pdf">Final Report</a>/
-              <a href="https://youtu.be/_fNMWlUNowc">Video</a>/
-              <a href="https://github.com/philip-huang/csc417-project">Code</a>
-              <p></p>
-              <p>Re-implemented the SIGGRAPH 96 <a href="https://www.cs.cmu.edu/~baraff/papers/sig96.pdf">paper</a> from David Baraff that introduced a linear-time sparse solver with Lagrangian multiplers in MATLAB.
-                Verified that the time complexity of our re-implemented sparse solver is linear with serial chains and trees.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/csc417.JPG' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="data/CSC413_Project_Report.pdf">
-                <papertitle>Evaluating Different Methods of Text Style Transfer</papertitle>
-              </a>
-              <br>
-              Course Project
-              <br>
-              University of Toronto, <em>CSC 413</em> Neural Networks and Deep Learning 
-              <br>
-              <a href="data/CSC413_Project_Report.pdf">Final Report</a>/
-              <a href="https://github.com/cuichenx/style-transformer">Code (Style Transformer)</a>/
-              <a href="https://github.com/cuichenx/controllable-text-attribute-transfer">Code (ALE Model)</a>
-              <p></p>
-              <p>We measured the quantitative performance of recent language models for text style transfer, using three metrics and third-party models for fair comparison.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/mie324.png' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://github.com/philip-huang/PIXOR">
-                <papertitle>Hawkeye</papertitle>
-              </a>
-              <br>
-              Course Project
-              <br>
-              University of Toronto, <em>MIE 324</em> Introduction to Machine Intellitenge 
-              <br>
-              <a href="data/MIE Project Final Report.pdf">Final Report</a>/
-              <a href="https://github.com/philip-huang/PIXOR">Code</a> (>250 Stars)
-              <p></p>
-              <p>Re-implementation of the paper PIXOR: Real-time 3D object Detection from Point Clouds using PyTorch.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/crazyflie.JPG' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://youtu.be/tO3RZ0rRzzI">
-                <papertitle>Indoor Localization of a Crazyflie using a Ping-Pong Ball</papertitle>
-              </a>
-              <br>
-              Summer Research Project
-              <br>
-              <em>CEAR Lab</em>, Technion
-              <br>
-              <a href="https://youtu.be/tO3RZ0rRzzI">Demo Video</a>
-              <p></p>
-              <p>Indoor localization and navigation of a Crazyflie nano-quadcopter with a RGB-D camera for pollinating sunflowers. </p>
-            </td>
-          </tr> 
-          
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <div class="one">
-                <img src='images/at-work_2017-07-24.jpg' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:73%;vertical-align:middle">
-              <a href="https://youtu.be/mShxyercvXU">
-                <papertitle>Controlling a Swarm of Crazyflies</papertitle>
-              </a>
-              <br>
-              Summer Research Project
-              <br>
-              <em>Dynamic Systems Lab</em>, University of Toronto
-              <br>
-              <a href="https://youtu.be/mShxyercvXU">Demo Video</a>/<a href="https://arxiv.org/pdf/1709.06620.pdf">Technical Report</a>
-              <p></p>
-              <p>Designing software framework and simulations for flying a swarm of 9 Crazyflie nano-quadcopters indoors.</p>
-            </td>
-          </tr> 
-          </tbody></table>
-    				 -->
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle"></td>
-            <td width="73%" valign="center">
-              Reviewer, IROS 2022, 2023
-              <br>
-              Reviewer, ICRA 2023, 2024
-              <br>
-              Reviewer, MetaLearn Workshop NeurIPS 2020
-              <br>
-              Graduate Student Mentor, <a href="http://prism.cs.toronto.edu/">PRISM Workshop 2022</a>
-              <br>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:27%;vertical-align:middle">
-              <img src="images/csc477.JPG" alt="csc477" width="180">
-            </td>
-            <td width="73%" valign="center">
-              Teaching Assistant at University of Toronto
-              <br>
-              <a href="http://www.cs.toronto.edu/~florian/courses/csc477_fall21/">CSC477 Fall 2021</a>, 
-              <br>
-              <a href="https://github.com/karansher/computer-graphics-csc317">CSC317 Fall 2022</a>,
-              <br>
-              CSC384 Winter 2023 
-            </td>
-          </tr>-->
-					
-					
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
